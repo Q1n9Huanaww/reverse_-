@@ -1,0 +1,8 @@
+{
+	"cloudAppId":null,
+	"cloudHost":null,
+	"runScriptUpdate":true,
+	"scriptUpdateUrl":null,
+	"scriptVersion":"1111111111",
+	"stopScriptUpdate":true
+}

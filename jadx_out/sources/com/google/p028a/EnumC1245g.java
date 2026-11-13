@@ -1,0 +1,19 @@
+package com.google.p028a;
+
+/* JADX INFO: renamed from: com.google.a.g */
+/* JADX INFO: compiled from: EncodeHintType.java */
+/* JADX INFO: loaded from: classes.dex */
+public enum EnumC1245g {
+    ERROR_CORRECTION,
+    CHARACTER_SET,
+    DATA_MATRIX_SHAPE,
+    MIN_SIZE,
+    MAX_SIZE,
+    MARGIN,
+    PDF417_COMPACT,
+    PDF417_COMPACTION,
+    PDF417_DIMENSIONS,
+    AZTEC_LAYERS,
+    QR_VERSION,
+    GS1_FORMAT
+}

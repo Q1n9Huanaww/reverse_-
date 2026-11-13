@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:processbutton="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/download_prompt"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/download_honeycomb"/>
+    <com.cyjh.share.view.SubmitProcessButton
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:id="@+id/button_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download"
+        processbutton:pb_colorPressed="@color/blue2"
+        processbutton:pb_colorNormal="@color/blue1"
+        processbutton:pb_textProgress="下载中"
+        processbutton:pb_textComplete="安装"
+        processbutton:pb_textError="@string/download_error"
+        processbutton:pb_colorProgress="@color/blue2"
+        processbutton:pb_colorComplete="@color/blue1"
+        processbutton:pb_colorError="@color/red1"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:orientation="vertical" ns0:background="#ffffffff" ns0:padding="10.0dp" ns0:layout_width="match_parent" ns0:layout_height="wrap_content"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <TextView ns0:textSize="@dimen/text_sp16" ns0:textColor="#ff3c7ac5" ns0:id="@id/id_tv_title" ns0:layout_width="match_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="@dimen/distance_10" ns0:layout_marginBottom="@dimen/distance_10" ns0:text="@string/no_root_title" ns0:singleLine="true" />
+    <View ns0:background="@color/blue" ns0:layout_width="match_parent" ns0:layout_height="@dimen/box_line_width" />
+    <LinearLayout ns0:layout_width="match_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="@dimen/distance_10">
+        <TextView ns0:textAppearance="?android:textAppearanceSmall" ns0:id="@id/id_tv_content" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:text="@string/no_root_prompt_content" ns0:lineSpacingMultiplier="1.5" />
+    </LinearLayout>
+    <Button ns0:textSize="@dimen/text_sp16" ns0:textColor="@color/white" ns0:gravity="center" ns0:layout_gravity="center" ns0:id="@id/id_btn_sure" ns0:background="#ff3c7ac5" ns0:layout_width="@dimen/distance_243" ns0:layout_height="wrap_content" ns0:layout_marginTop="@dimen/distance_10" ns0:layout_marginBottom="@dimen/distance_5" ns0:minHeight="@dimen/distance_40" ns0:text="@string/hidefw_ok" />
+</LinearLayout>

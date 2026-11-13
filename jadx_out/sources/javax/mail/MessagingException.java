@@ -1,0 +1,72 @@
+package javax.mail;
+
+/* JADX INFO: loaded from: classes.dex */
+public class MessagingException extends Exception {
+    private static final long serialVersionUID = -7569192289819959253L;
+    private Exception next;
+
+    public MessagingException() {
+        initCause(null);
+    }
+
+    public MessagingException(String str) {
+        super(str);
+        initCause(null);
+    }
+
+    public MessagingException(String str, Exception exc) {
+        super(str);
+        this.next = exc;
+        initCause(null);
+    }
+
+    public synchronized Exception getNextException() {
+        return this.next;
+    }
+
+    @Override // java.lang.Throwable
+    public synchronized Throwable getCause() {
+        return this.next;
+    }
+
+    public synchronized boolean setNextException(Exception exc) {
+        Exception exc2 = this;
+        while ((exc2 instanceof MessagingException) && ((MessagingException) exc2).next != null) {
+            exc2 = ((MessagingException) exc2).next;
+        }
+        if (!(exc2 instanceof MessagingException)) {
+            return false;
+        }
+        ((MessagingException) exc2).next = exc;
+        return true;
+    }
+
+    @Override // java.lang.Throwable
+    public synchronized String toString() {
+        String string = super.toString();
+        Exception exc = this.next;
+        if (exc == null) {
+            return string;
+        }
+        if (string == null) {
+            string = "";
+        }
+        StringBuffer stringBuffer = new StringBuffer(string);
+        while (exc != null) {
+            stringBuffer.append(";\n  nested exception is:\n\t");
+            if (exc instanceof MessagingException) {
+                MessagingException messagingException = (MessagingException) exc;
+                stringBuffer.append(messagingException.superToString());
+                exc = messagingException.next;
+            } else {
+                stringBuffer.append(exc.toString());
+                exc = null;
+            }
+        }
+        return stringBuffer.toString();
+    }
+
+    private final String superToString() {
+        return super.toString();
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:orientation="vertical" ns0:background="#ffffffff" ns0:layout_width="match_parent" ns0:layout_height="wrap_content"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <TextView ns0:textAppearance="?android:textAppearanceMedium" ns0:layout_gravity="center_horizontal" ns0:id="@id/textView1" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginTop="@dimen/distance_25" ns0:text="@string/miuiguide_title" />
+    <TextView ns0:textColor="@color/gray2" ns0:layout_gravity="center_horizontal" ns0:id="@id/textView2" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginTop="@dimen/distance_5" ns0:text="@string/miuiguide_subtitle" />
+    <RelativeLayout ns0:layout_width="match_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="@dimen/dp_12" ns0:layout_marginBottom="@dimen/dp_12">
+        <TextView ns0:textSize="18.0sp" ns0:id="@id/textView3" ns0:background="@color/gray1" ns0:padding="20.0dp" ns0:layout_width="match_parent" ns0:layout_height="wrap_content" ns0:text="@string/miuiguide_show_dock" />
+        <ImageView ns0:id="@id/imageView1" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginTop="10.0dp" ns0:layout_marginRight="10.0dp" ns0:src="@drawable/finger" ns0:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button ns0:textColor="@android:color/white" ns0:id="@id/dialog_miuiguide_button_open" ns0:background="#ff3c7ac5" ns0:layout_width="match_parent" ns0:layout_height="wrap_content" ns0:layout_marginLeft="20.0dp" ns0:layout_marginRight="20.0dp" ns0:layout_marginBottom="@dimen/distance_25" ns0:text="@string/miuiguide_open" />
+</LinearLayout>

@@ -1,23 +1,9 @@
-# 大文件：GitHub 单文件上限 100 MB，全部排除
-il2cpp/
-app.apk
-*.apk
-libil2cpp.so
-global-metadata.dat
+# GitHub 单文件上限 100 MB；LFS 单文件上限 2 GB
+# base.apk 为 2.9 GB 游戏本体，超出 LFS 上限，无法入库
+# 需要时从官方渠道获取，或用本地路径 il2cpp/base.apk
 
-# 解包产物（体积大，可自行用 apktool/jadx 重新生成）
-apktool_out/
-jadx_out/
-apk_raw/
-atc/
-tools/
-
-# 原始载荷与中间字节码（体积较大，可按需保留）
-script.lc.xorff
-script.lc.xorff.bin
-script.dec.bin
-chunk*.luac
-blob*.bin
+# 仅排除超限的游戏本体
+il2cpp/base.apk
 
 # Python 缓存
 __pycache__/

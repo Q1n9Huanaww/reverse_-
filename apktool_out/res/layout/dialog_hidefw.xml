@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:gravity="center" ns0:orientation="vertical" ns0:background="#ffffffff" ns0:padding="10.0dp" ns0:layout_width="match_parent" ns0:layout_height="match_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <TextView ns0:textAppearance="?android:textAppearanceMedium" ns0:id="@id/textView1" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:text="@string/hidefw_tip_title" />
+    <TextView ns0:textAppearance="?android:textAppearanceMedium" ns0:gravity="center" ns0:id="@id/textView2" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:text="@string/hidefw_tip_content" ns0:layout_weight="1.0" />
+    <LinearLayout ns0:layout_width="match_parent" ns0:layout_height="wrap_content">
+        <Button ns0:textColor="@color/gray2" ns0:id="@id/hidefw_button_cancel" ns0:background="@drawable/scriptui_button_bg_gray" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginRight="10.0dp" ns0:minHeight="35.0dp" ns0:text="@string/hidefw_cancel" ns0:layout_weight="1.0" />
+        <Button ns0:textColor="@color/blue1" ns0:id="@id/hidefw_button_ok" ns0:background="@drawable/scriptui_button_bg_blue" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:minHeight="35.0dp" ns0:text="@string/hidefw_ok" ns0:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

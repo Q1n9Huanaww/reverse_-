@@ -1,0 +1,21 @@
+package okhttp366;
+
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import okio66.ByteString;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class Credentials {
+    private Credentials() {
+    }
+
+    public static String basic(String username, String password) {
+        return basic(username, password, StandardCharsets.ISO_8859_1);
+    }
+
+    public static String basic(String username, String password, Charset charset) {
+        String usernameAndPassword = username + ":" + password;
+        String encoded = ByteString.encodeString(usernameAndPassword, charset).base64();
+        return "Basic " + encoded;
+    }
+}

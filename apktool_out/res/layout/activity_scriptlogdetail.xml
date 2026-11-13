@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:orientation="vertical" ns0:background="#ffffffff" ns0:layout_width="match_parent" ns0:layout_height="match_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <com.ds.daisi.customview.TitleView ns0:id="@id/titleview_scriptlogdetail" style="@style/titleview" />
+    <ScrollView ns0:layout_width="match_parent" ns0:layout_height="0.0dp" ns0:layout_weight="1.0">
+        <LinearLayout ns0:layout_width="match_parent" ns0:layout_height="wrap_content">
+            <TextView ns0:textAppearance="?android:textAppearanceMedium" ns0:textColor="@color/gray2" ns0:id="@id/tv_scriptlogdetail_scriptlog" ns0:background="@android:color/white" ns0:padding="10.0dp" ns0:layout_width="match_parent" ns0:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+    <Button ns0:id="@id/btn_scriptlogdetail_showmore" ns0:background="#ff3c7ac5" ns0:layout_marginTop="10.0dp" ns0:layout_marginBottom="10.0dp" ns0:text="@string/scriptlogdetail_showmore" style="@style/button" />
+</LinearLayout>

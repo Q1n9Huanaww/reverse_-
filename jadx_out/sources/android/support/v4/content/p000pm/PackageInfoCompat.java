@@ -1,0 +1,17 @@
+package android.support.v4.content.p000pm;
+
+import android.content.pm.PackageInfo;
+import android.os.Build;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class PackageInfoCompat {
+    public static long getLongVersionCode(PackageInfo info) {
+        if (Build.VERSION.SDK_INT >= 28) {
+            return info.getLongVersionCode();
+        }
+        return info.versionCode;
+    }
+
+    private PackageInfoCompat() {
+    }
+}

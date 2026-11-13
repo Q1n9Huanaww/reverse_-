@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest ns0:versionCode="20250830" ns0:versionName="1.0.5" ns0:compileSdkVersion="23" ns0:compileSdkVersionCodename="6.0-2438415" package="com.warnship.autoplay" platformBuildVersionCode="27" platformBuildVersionName="8.1.0"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <uses-permission ns0:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission ns0:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.VIBRATE" />
+    <uses-permission ns0:name="android.permission.WAKE_LOCK" />
+    <uses-permission ns0:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission ns0:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission ns0:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission ns0:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission ns0:name="com.bfycm_ANDROID.PERMISSION.SEND_SMS" />
+    <uses-permission ns0:name="com.bfycm_ANDROID.PERMISSION.CALL_PHONE" />
+    <uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission ns0:name="android.permission.BLUETOOTH" />
+    <uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission ns0:name="android.permission.INTERNET" />
+    <uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission ns0:name="android.permission.GET_TASKS" />
+    <uses-permission ns0:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission ns0:name="android.permission.RECORD_AUDIO" />
+    <uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-feature ns0:name="android.hardware.camera" />
+    <uses-feature ns0:name="android.hardware.camera.autofocus" />
+    <uses-permission ns0:name="android.permission.CAMERA" />
+    <uses-permission ns0:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission ns0:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission ns0:name="android.permission.CALL_PHONE" />
+    <uses-permission ns0:name="android.permission.READ_SMS" />
+    <uses-permission ns0:name="android.permission.SEND_SMS" />
+    <uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission ns0:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission ns0:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission ns0:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission ns0:name="android.permission.ACCESS_MTK_MMHW" />
+    <uses-permission ns0:name="android.permission.DIAGNOSTIC" />
+    <uses-permission ns0:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission ns0:name="android.permission.SAMSUNG_TUNTAP" />
+    <uses-permission ns0:name="android.permission.READ_CONTACTS" />
+    <uses-permission ns0:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission ns0:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE" />
+    <application ns0:theme="@android:style/Theme.Holo.Light.NoActionBar" ns0:label="现代战舰助手" ns0:icon="@drawable/ic_launcher" ns0:name="com.ds.daisi.AppContext" ns0:allowBackup="true" ns0:supportsRtl="true">
+        <receiver ns0:name="com.ds.daisi.receiver.InstallAndRemoveAppSuccessReceive">
+            <intent-filter>
+                <action ns0:name="android.intent.action.PACKAGE_ADDED" />
+                <action ns0:name="android.intent.action.PACKAGE_REMOVED" />
+                <data ns0:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity ns0:theme="@style/AppTheme" ns0:label="现代战舰助手" ns0:name="com.ds.daisi.activity.news.SplashActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" ns0:alwaysRetainTaskState="true" ns0:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action ns0:name="android.intent.action.MAIN" />
+                <category ns0:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data ns0:name="UMENG_APPKEY" ns0:value="123" />
+        <service ns0:name="com.ds.daisi.services.PhoneStateService" />
+        <service ns0:name="com.ds.daisi.services.BootService" />
+        <service ns0:name="com.ds.daisi.services.VerifyService" />
+        <service ns0:name="com.ds.daisi.services.TimerService" />
+        <activity ns0:theme="@style/viewpager_indicators" ns0:name="com.ds.daisi.activity.ElfinPayActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:theme="@android:style/Theme.Holo.Light" ns0:name="com.ds.daisi.activity.news.FengLingAdWebViewActivity" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.ScriptLogActivity" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.ScriptLogDetailActivity" ns0:launchMode="singleTop" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.FeedbackActivity" ns0:launchMode="singleTop" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.cyjh.feedback.lib.activity.ImageSelectActivity" ns0:launchMode="singleTop" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.MessagePushActivity" ns0:launchMode="singleTop" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.MessageDetailActivity" ns0:launchMode="singleTop" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.RegisterActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.FindPasswordActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.LoginActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.AlterPasswordActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.TermsOfServiceActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.BindRegisterCodeActivity" ns0:launchMode="singleTop" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.iflytek.voiceads.request.IFLYBrowser" ns0:screenOrientation="portrait" />
+        <service ns0:name="com.iflytek.voiceads.download.DownloadService" ns0:stopWithTask="true" />
+        <provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="6AD21188DC52405588495BE6F0DD5996" ns0:grantUriPermissions="true">
+            <meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@xml/file_paths" />
+        </provider>
+        <meta-data ns0:name="IFLYTEK_APPKEY_AD" ns0:value="589ac20e" />
+        <activity ns0:name="com.ds.daisi.activity.news.FullScreenTwoAdActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.news.H5LinkJumpPageActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.UnbindRegistrationCodeActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.SweepCodeActivity" ns0:launchMode="singleTask" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.guide.RecognitionGuideActivity" ns0:screenOrientation="portrait" />
+        <activity ns0:name="com.ds.daisi.activity.guide.NoTitleBarWebViewActivity" ns0:screenOrientation="portrait" />
+        <meta-data ns0:name="com.ds.daisi.load_model.CustomGlideModule" ns0:value="GlideModule" />
+        <provider ns0:name="mobi.oneway.common.provider.OwCommonFileProvider" ns0:exported="false" ns0:authorities="2E911FACC8E84315BF8A713EF078C0AC" ns0:grantUriPermissions="true">
+            <meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@xml/ow_same_file_path" />
+        </provider>
+        <provider ns0:name="mobi.oneway.common.provider.OwBFileProvider" ns0:exported="false" ns0:authorities="773DBB4393D7450890010CCA4B2C1F7B" ns0:grantUriPermissions="true">
+            <meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@xml/ow_b_file_paths" />
+        </provider>
+        <activity ns0:name="com.didi.virtualapk.delegate.StubActivity" ns0:exported="false" ns0:launchMode="standard" />
+        <activity ns0:name="com.didi.virtualapk.core.A$1" ns0:exported="false" ns0:launchMode="standard" />
+        <activity ns0:theme="@android:style/Theme.Translucent" ns0:name="com.didi.virtualapk.core.A$2" ns0:exported="false" ns0:launchMode="standard" />
+        <activity ns0:name="com.didi.virtualapk.core.B$1" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$2" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$3" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$4" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$5" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$6" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$7" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.B$8" ns0:exported="false" ns0:launchMode="singleTop" />
+        <activity ns0:name="com.didi.virtualapk.core.C$1" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$2" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$3" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$4" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$5" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$6" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$7" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.C$8" ns0:exported="false" ns0:launchMode="singleTask" />
+        <activity ns0:name="com.didi.virtualapk.core.D$1" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$2" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$3" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$4" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$5" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$6" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$7" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <activity ns0:name="com.didi.virtualapk.core.D$8" ns0:exported="false" ns0:launchMode="singleInstance" />
+        <service ns0:name="com.didi.virtualapk.delegate.LocalService" ns0:exported="false" />
+        <service ns0:name="com.didi.virtualapk.delegate.RemoteService" ns0:exported="false" ns0:process=":daemon">
+            <intent-filter>
+                <action ns0:name="com.ds.daisi.intent.ACTION_DAEMON_SERVICE" />
+            </intent-filter>
+        </service>
+        <provider ns0:name="com.didi.virtualapk.delegate.RemoteContentProvider" ns0:exported="false" ns0:process=":daemon" ns0:authorities="98F47FDD1B6F463396121B384C3B65AE" />
+        <service ns0:name="com.cyjh.mq.service.IpcService" />
+        <service ns0:label="@string/inputkb" ns0:name="com.ime.input.InputKb" ns0:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action ns0:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data ns0:name="android.view.im" ns0:resource="@xml/method" />
+        </service>
+        <activity ns0:theme="@android:style/Theme.Dialog" ns0:name="com.cyjh.mobileanjian.screencap.ForScreenShotActivity" ns0:launchMode="singleTop" />
+        <receiver ns0:name="com.ds.daisi.receiver.BootReceiver" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="true">
+            <intent-filter ns0:priority="2147483647">
+                <action ns0:name="android.intent.action.BOOT_COMPLETED" />
+                <action ns0:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action ns0:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action ns0:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action ns0:name="android.intent.action.USER_PRESENT" />
+                <category ns0:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service ns0:name="com.ds.daisi.service.AidlService" ns0:exported="true" ns0:foregroundServiceType="dataSync">
+            <intent-filter>
+                <action ns0:name="com.ds.daisi.service.AidlService" />
+            </intent-filter>
+        </service>
+        <service ns0:name="com.ds.daisi.services.PhoneStateService" ns0:enabled="true" ns0:exported="false" ns0:foregroundServiceType="dataSync|phoneCall">
+            <intent-filter>
+                <action ns0:name="com.ds.daisi.services.PHONE_STATE_SERVICE" />
+            </intent-filter>
+        </service>
+        <receiver ns0:name="com.ds.daisi.receiver.PhoneStateReceiver" ns0:enabled="true" ns0:exported="true">
+            <intent-filter ns0:priority="1000">
+                <action ns0:name="android.intent.action.PHONE_STATE" />
+                <action ns0:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission ns0:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission ns0:name="android.permission.INTERNET" />
+    <uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission ns0:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    <uses-permission ns0:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission ns0:name="android.permission.WAKE_LOCK" />
+    <uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission ns0:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission ns0:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission ns0:name="android.permission.CALL_PHONE" />
+    <uses-permission ns0:name="android.permission.VIBRATE" />
+</manifest>

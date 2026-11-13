@@ -1,0 +1,257 @@
+# 原版功能对照表（自动生成）
+
+原版可解码函数/变量名: **245** 个
+
+已对应: 109 | **未对应: 136**
+
+
+## ❓ 未对应清单（需要补）
+
+- 上方敌对船只
+- 下载BMT
+- 下载游戏
+- 下载游戏进度提示
+- 不动时间
+- 代理文件代码
+- 休息倒计时
+- 优先打开加速器版本
+- 冲鸭变速器
+- 分辨率提醒
+- 判断需要更新
+- 华为再次登录
+- 发送效率
+- 发送文本
+- 右上角战绩灰色
+- 右侧按键操作
+- 右侧按键操作的行为
+- 右侧按键操作行为
+- 喊话功能
+- 国服开始游戏按钮
+- 增添换行符
+- 奖励OK标志
+- 安装OURPLAY空间
+- 安装或更新现代战舰
+- 寻找黑色坐标
+- 屏幕中间点
+- 展示效率
+- 开始战斗
+- 弹出游戏下载网盘
+- 当前对局是否成功
+- 忽视ROOT权限
+- 悬浮窗判断MOD的BMT
+- 悬浮窗判断闪玩的BMT
+- 战斗弹药补给
+- 战斗提示语
+- 战斗画面判断
+- 战斗结束判断
+- 战斗结束收益累计计算
+- 战斗结束收益识别
+- 战斗结束离开战场按钮
+- 战斗结束返回游戏大厅
+- 战斗综合操作
+- 截取HTML内容
+- 打开加速器
+- 提前结束战斗隐形收益计算
+- 提升空天航母高度
+- 提示安装变速器
+- 操作未成功提示
+- 数字识别
+- 新手教程
+- 新版本进入战斗
+- 时间
+- 普通账号奖励是否有金条
+- 检查每日奖励
+- 检测卡屏
+- 模拟器BMT打开无冷却
+- 测试
+- 测试2
+- 测试模式
+- 清空关闭所有VPN
+- 游客一键起号
+- 游戏中小地图左边三道杠
+- 游戏大厅界面判断
+- 游戏画质调节
+- 游戏登录界面判断
+- 游戏登陆界面
+- 灰色A
+- 点击OK
+- 点击团队死斗
+- 点击您确认购买此物品
+- 点击消耗品
+- 点击直到左上角蓝色小箭头消失
+- 点击空天战机
+- 点击货币
+- 点击返回
+- 点击进入战斗
+- 点击页面
+- 点击高级账号
+- 点左下角的空白处
+- 版本提醒
+- 相似度
+- 相关信息设置
+- 确定是红手指平台
+- 确认购买金额并等待奖励OK
+- 空天对战详情介绍
+- 空天战机INTY坐标
+- 空天战机是否还在
+- 空天模式发送成果截图
+- 空天游戏是否结束
+- 空天特殊卡顿
+- 等级奖励判断X
+- 红色B
+- 红色C
+- 结束战斗时是否有高级账号
+- 绿色模式小沟
+- 网络参数设置
+- 网络参数设置截取
+- 网络错误2
+- 聊天室发送文本
+- 舰载机起飞标志
+- 舰载机轮流发射
+- 船只向后停止
+- 船只战斗操作
+- 船只起飞舰载机操作
+- 获取当前时间
+- 获取注册码
+- 菜单下滑
+- 识别团队死斗Y轴坐标
+- 识别界面
+- 语言调整
+- 读取单项配置并设置全局变量
+- 读取配置
+- 读取配置哈哈
+- 谷歌再次登录
+- 购买升级礼券
+- 购买高级账号
+- 转为表单数据
+- 软件评分
+- 返回港口右边小箭头
+- 返回港口红绿色按钮
+- 返回游戏大厅
+- 进入战斗
+- 进入游戏后检测道具是否缺失
+- 退出本局战斗
+- 选择地图
+- 选择界面继续战斗
+- 通用型横屏发送文本并确认
+- 通用购买消耗道具
+- 道具用完的提示
+- 邮箱再次登录
+- 重新启动游戏
+- 间隔时间操作
+- 防止退出游戏
+- 防止退出继续战斗
+- 随机字符串
+- 高级奖励是否有金条
+
+## ✅ 已对应
+
+- 一共有几个武器位置 → gun/weapon 锚点
+- 一号导弹为帮助锁定 → missile_lock
+- 上滑任务 → refresh_tasks
+- 下滑任务 → refresh_tasks
+- 任务刷新完成界面判断 → refresh_tasks
+- 优先打开加速器版本重启 → restart_game
+- 充值商店看广告 → watch_ads
+- 关闭14岁广告提示 → watch_ads
+- 切换占点目标 → 死斗不用(已知)
+- 刷新金条大任务 → refresh_tasks
+- 单线程卡密心跳检验 → licensing
+- 卡密心跳检验 → licensing
+- 发送邮件 → claim_mailbox
+- 右上角关闭广告按钮 → watch_ads
+- 右上角绿色数量判断飞机是否还存活 → relamp/heli锚点
+- 向前移动 → drive()
+- 向后移动 → battle.back
+- 商店界面判断 → shop_buy(关)
+- 商店自动补充道具 → shop_buy(关)
+- 大视角确定左右移位 → big_view_direction
+- 大视角范围内的敌人 → big_view_direction
+- 大角度右滑动 → scan_turn
+- 大角度左滑动 → scan_turn
+- 奖励领取中收益识别 → claim_rewards
+- 完成的任务X → refresh_tasks
+- 小雷达检测目标 → radar_bearing
+- 小雷达红色B → radar_bearing
+- 小雷达红色C → radar_bearing
+- 广告周岁判定 → watch_ads
+- 广告延迟 → watch_ads
+- 广告间隔分钟 → watch_ads
+- 广告领取奖励 → claim_rewards
+- 开局转船头 → intro_ship_turn_left_sec
+- 弹出的战舰购买广告 → watch_ads
+- 战斗干扰 → battle.flare
+- 战斗结束双倍广告 → watch_ads
+- 战斗维修 → ammo 锚点无效
+- 战斗通行证X → claim_pass
+- 战机视角返回操作 → HudTurner/aim
+- 按条件任务更换 → refresh_tasks
+- 控制飞机一直往前飞 → relamp/heli锚点
+- 是否有战机视角 → HudTurner/aim
+- 查看是否有子任务需要更换 → refresh_tasks
+- 查看通行证等级奖励 → claim_pass
+- 根据黑标的INTX确认任务类型 → refresh_tasks
+- 检测取消广告 → watch_ads
+- 武器三号位判断 → gun/weapon 锚点
+- 武器二号位判断 → gun/weapon 锚点
+- 武器五号位判断 → gun/weapon 锚点
+- 武器六号位判断 → gun/weapon 锚点
+- 武器四号位判断 → gun/weapon 锚点
+- 每日任务处理 → refresh_tasks
+- 每日任务界面判断 → refresh_tasks
+- 每日任务领子任务奖励 → refresh_tasks
+- 每日奖励领取 → claim_rewards
+- 没有广告判断 → watch_ads
+- 测试任务 → refresh_tasks
+- 点击广告宝箱 → watch_ads
+- 点击绿色小直升飞机图标 → relamp/heli锚点
+- 特殊临时活动领取 → claim_rewards
+- 特殊活动子任务奖励领取 → claim_rewards
+- 现代战舰发送停止邮件 → claim_mailbox
+- 现代战舰发送欢迎邮件 → claim_mailbox
+- 现代战舰发送自定义邮件 → claim_mailbox
+- 现代战舰发送邮件 → claim_mailbox
+- 看广告通用动作 → watch_ads
+- 瞄准范围内是否有敌人判断 → AimController
+- 瞄准范围内确定是否瞄准 → AimController
+- 确认金条任务 → refresh_tasks
+- 空天使用飞机占点 → relamp/heli锚点
+- 空天占点C点是否为绿色 → 死斗不用(已知)
+- 空天航母活动广告关闭 → watch_ads
+- 等待飞机加载动画 → relamp/heli锚点
+- 紫色广告按钮 → watch_ads
+- 紫色广告有 → watch_ads
+- 统计信息更新 → stats
+- 船体遭受攻击 → _fire
+- 船只向前移动 → drive()
+- 视角左右转向移动 → HudTurner/aim
+- 识别每日任务绿色小对号 → refresh_tasks
+- 读取上次广告时间是否过期 → watch_ads
+- 谷歌WEB干扰 → battle.flare
+- 返回视角按钮 → HudTurner/aim
+- 进入商店 → shop_buy(关)
+- 通行证广告不能用返回按键关闭 → claim_pass
+- 通行证满级判断 → claim_pass
+- 通行证页面等级识别 → claim_pass
+- 重启后的插件操作 → restart_game
+- 重启状态设置 → restart_game
+- 重置战斗通行证 → claim_pass
+- 金条任务是否可以刷新 → refresh_tasks
+- 键盘输入广告 → watch_ads
+- 随机挑选广告 → watch_ads
+- 雷达大范围内敌人搜索 → radar_*
+- 雷达大范围内队友搜索 → radar_*
+- 雷达小范围内敌人搜索 → radar_*
+- 雷达左右判断左右转向移动 → radar_*
+- 领取每日任务后领取通行证 → claim_rewards
+- 飞机右滑动 → relamp/heli锚点
+- 飞机向上飞起3秒后再平飞 → relamp/heli锚点
+- 飞机向下飞起3秒后再平飞 → relamp/heli锚点
+- 飞机大右滑动 → relamp/heli锚点
+- 飞机大左滑动 → relamp/heli锚点
+- 飞机寻敌视野内有敌人 → relamp/heli锚点
+- 飞机左滑动 → relamp/heli锚点
+- 飞机点灯转向 → relamp/heli锚点
+- 飞机状态栏最后2位是否还有绿色飞机 → relamp/heli锚点
+- 飞机状态栏最后一位是否还有绿色飞机 → relamp/heli锚点
+- 首次向上提升视角 → HudTurner/aim

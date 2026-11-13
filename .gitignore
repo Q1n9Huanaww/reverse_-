@@ -1,0 +1,68 @@
+# 大文件：GitHub 单文件上限 100 MB，全部排除
+il2cpp/
+app.apk
+*.apk
+libil2cpp.so
+global-metadata.dat
+
+# 解包产物（体积大，可自行用 apktool/jadx 重新生成）
+apktool_out/
+jadx_out/
+apk_raw/
+atc/
+tools/
+
+# 原始载荷与中间字节码（体积较大，可按需保留）
+script.lc.xorff
+script.lc.xorff.bin
+script.dec.bin
+chunk*.luac
+blob*.bin
+
+# Python 缓存
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 临时脚本与调试输出
+_patch_*.py
+_dbg*.py
+p[0-9].py
+an[0-9].py
+_scan*.py
+_audit*.py
+_mine*.py
+_dis*.py
+_trace*.py
+_parse*.py
+_delta.py
+_mask.py
+_opstats.py
+_perm52.py
+_shift_hist.py
+_bigram.py
+_samples.py
+_runbreak.py
+_hdr2.py
+_tail.py
+so_msgs.py
+find_ncode.py
+dump_edge.py
+scan_img.py
+find_proto.py
+dumpclaim.py
+assign.py
+gen2.py
+_so_msgs.py
+_find_ncode.py
+_dump_edge.py
+_scan_img.py
+_find_proto.py
+_dumpclaim.py
+_assign.py
+_gen2.py
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
